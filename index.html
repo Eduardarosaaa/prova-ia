@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPonto</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>♻ EcoPonto</h1>
+
+        <form id="formDescarte">
+
+            <label>Material</label>
+
+            <select id="material">
+                <option value="🧴Plástico">Plástico</option>
+                <option value="📄Papel">Papel</option>
+                <option value="🔩Metal">Metal</option>
+            </select>
+
+            <label>Quantidade (g)</label>
+
+            <input
+                type="number"
+                id="quantidade"
+                min="50"
+                required
+            >
+
+            <button type="submit">
+                Registrar Descarte
+            </button>
+
+        </form>
+
+        <div id="mensagem"></div>
+
+        <h2>Registros</h2>
+
+        <ul id="lista"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
